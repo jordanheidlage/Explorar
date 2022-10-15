@@ -24,33 +24,26 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_LOCATION = gql`
-  mutation addLocation($locationText: String!) {
-    addLocation(locationText: $locationText) {
-      _id
-      locationText
-      locationAuthor
-      createdAt
-      comments {
-        _id
-        commentText
-      }
+export const SAVE_LOCATION = gql`
+mutation SaveLocation($name: String!, $locationId: ID!, $image: String!) {
+  saveLocation(name: $name, locationId: $locationId, image: $image) {
+    savedLocations {
+      locationId
+      name
+      image
     }
   }
+}
 `;
 
-export const ADD_COMMENT = gql`
-  mutation addComment($thoughtId: ID!, $commentText: String!) {
-    addComment(thoughtId: $thoughtId, commentText: $commentText) {
-      _id
-      thoughtText
-      thoughtAuthor
-      createdAt
-      comments {
-        _id
-        commentText
-        createdAt
-      }
+export const REMOVE_LOCATION = gql`
+mutation RemoveLocation($locationId: ID!) {
+  removeLocation(locationId: $locationId) {
+    savedLocations {
+      locationId
+      name
+      image
     }
   }
+}
 `;
