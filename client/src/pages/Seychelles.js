@@ -5,9 +5,10 @@ export default function Seychelles(props) {
 
         <>
 
+            <div class="container">
 
+            </div>
 
-            
         </>
     )
 

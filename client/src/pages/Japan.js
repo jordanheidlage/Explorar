@@ -5,9 +5,10 @@ export default function Japan(props) {
 
         <>
 
+            <div class="container">
 
+            </div>
 
-            
         </>
     )
 
