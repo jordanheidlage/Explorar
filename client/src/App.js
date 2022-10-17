@@ -2,12 +2,12 @@ import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
 import { useState } from 'react';
-import Greece from './pages/Greece';
-import Indonesia from './pages/Indonesia';
-import Italy from './pages/Italy';
-import Japan from './pages/Japan';
-import Seychelles from './pages/Seychelles';
-import Turkey from './pages/Turkey';
+// import Greece from './pages/Greece';
+// import Indonesia from './pages/Indonesia';
+// import Italy from './pages/Italy';
+// import Japan from './pages/Japan';
+// import Seychelles from './pages/Seychelles';
+// import Turkey from './pages/Turkey';
 
 
 function App() {
@@ -21,14 +21,14 @@ function App() {
             case "Home":
               return <Home />
 
-            case "":
-              // return < />
+            // case "":
+            //   // return < />
 
-            case "":
-              // return < />
+            // case "":
+            //   // return < />
 
-            case "":
-              // return < />
+            // case "":
+            //   // return < />
 
             default:
               return <Home />
