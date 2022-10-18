@@ -8,7 +8,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* cursor: url(‘https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png’) 39 39, auto; */
+  cursor: url(‘https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png’) 39 39, auto;
 }
 nav{
   display: flex;
