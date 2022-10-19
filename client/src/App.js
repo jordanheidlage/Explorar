@@ -1,4 +1,8 @@
-import Navbar from "./navigation/Navbar";
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomeNavbar from "./navigation/HomeNavbar";
 import Home from "./Home";
 import In from "./forms/In";
 import Out from "./forms/Out";
@@ -8,51 +12,45 @@ import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
 import Turkey from "./pages/Turkey";
-
+import NavbarHome from './navigation/HomeNavbar';
 
 
 function App() {
-//  const [currentPage, setCurrentPage] = useState("Home")
+  //  const [currentPage, setCurrentPage] = useState("Home")
   return (
     <div className="App">
-      <Navbar />
-      
-      <Home />
-      
-      {/* currentPage={currentPage} setCurrentPage={setCurrentPage} */}
-      
-      {/* {
-        (() => {
-          switch (currentPage) {
-            case "Home":
-              return <Home />
-
-            case "Greece":
-              return <Greece />
-
-            case "Indonesia":
-              return <Indonesia />
-
-            case "Italy":
-              return <Italy />
-
-            case "Japan":
-              return <Japan />
-
-            case "Seychelles":
-              return <Seychelles />
-
-            case "Turkey":
-              return <Turkey />
-
-            default:
-              return <Home />
-
-          }
-        })()
-      } */}
-
-
+      <Router>
+        <>
+        <HomeNavbar/>
+          <Navbar />
+          <Routes>
+            <Route
+              path='/Home'
+              element={<Home />}
+            />
+            <Route
+              path='/In'
+              element={<In />}
+            />
+            <Route
+              path='/Out'
+              element={<Out />}
+            />
+            <Route
+              path='/Greece'
+              element={<Greece />}
+            />
+            <Route
+              path='/Indonesia'
+              element={<Indonesia />}
+            />
+            <Route
+              path='/Greece'
+              element={<Greece/>}
+            />
+          </Routes>
+        </>
+      </Router>
     </div>
   );
 }
