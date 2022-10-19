@@ -1,8 +1,38 @@
-function Navbar () {
+import "./NavbarStyles.css"
+
+
+
+
+function Navbar() {
     return (
-<>
-<h1>this is nav</h1>
-</>
+        <>
+
+            <nav>
+
+                <div>
+                    <ul id = "navtabs">
+                        <li><a href="index.html">Greece</a></li>
+                        <li><a href="index.html">Indonesia</a></li>
+                        <li><a href="index.html">Italy</a></li>
+                        <li>
+                            <a href="index.html">
+                                <svg id="logo-38" width="78" height="32" viewBox="0 0 78 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" class="ccustom" fill="#FF7A00"></path> <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" class="ccompli1" fill="#FF9736"></path> <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" class="ccompli2" fill="#FFBC7D"></path>
+                                </svg>
+                            </a>
+                            <a href="index.html">Explorar</a>
+                        </li>
+                        <li><a href="index.html">Japan</a></li>
+                        <li><a href="index.html">Seychelles</a></li>
+                        <li><a href="index.html">Turkey</a> </li>
+                    </ul>
+                </div>
+
+                <div>
+                  <button>Login</button>
+                </div>
+            </nav>
+
+        </>
     )
 }
 
