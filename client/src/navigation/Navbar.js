@@ -1,16 +1,14 @@
+import React from "react";
+import Button from 'react-bootstrap/Button';
 import "./NavbarStyles.css"
-
-
-
 
 function Navbar() {
     return (
         <>
 
             <nav>
-
                 <div>
-                    <ul id = "navtabs">
+                    <ul id="navtabs">
                         <li><a href="index.html">Greece</a></li>
                         <li><a href="index.html">Indonesia</a></li>
                         <li><a href="index.html">Italy</a></li>
@@ -28,8 +26,9 @@ function Navbar() {
                 </div>
 
                 <div>
-                  <button>Login</button>
+                    <Button>Login</Button>
                 </div>
+
             </nav>
 
         </>

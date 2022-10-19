@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./navigation/Navbar";
 
-function Home () {
+function Home ({ props }) {
     return (
         <>
-        
+
         
         
         </>
