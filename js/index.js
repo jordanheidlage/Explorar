@@ -1,13 +1,24 @@
-var counter =0;
-$('#next').click(function(){
-  var pos = $('#fig').position();
-  if(counter < 4){
-    console.log(counter);
-    counter++;
-      $('#fig').css("left",pos.left-( $(window).innerWidth() ));
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav() {
+  navToggler.classList.toggle("active");
+  document.querySelector(".nav").classList.toggle("open");
+  console.log(toggleNav);
+}
+
+/* close nav when clicking on a nav item*/
+document.addEventListener("click", function (event) {
+  if (event.target.closest(".nav-item")) {
+    toggleNav();
   }
-  else{
-    $('#fig').css("left","0px");
-    counter=0;
+});
+
+/*-------------sticky header--------------*/
+window.addEventListener("scroll", function () {
+  if (this.scrollY > 60) {
+    document.querySelector(".header").classList.add("sticky");
+  } else {
+    document.querySelector(".header").classList.remove("sticky");
   }
 });
