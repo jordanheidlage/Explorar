@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -13,8 +12,6 @@ import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
 import Turkey from "./pages/Turkey";
-
-=======
 import {
   ApolloClient,
   InMemoryCache,
@@ -22,19 +19,6 @@ import {
   createHttpLink,
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Navbar from './Navbar';
-import Italy from './pages/Italy'
-import Home from './Home';
-import { useState } from 'react';
-// import Greece from './pages/Greece';
-// import Indonesia from './pages/Indonesia';
-// import Italy from './pages/Italy';
-// import Japan from './pages/Japan';
-// import Seychelles from './pages/Seychelles';
-// import Turkey from './pages/Turkey';
->>>>>>> 61ea51db84dbbaf8236282bd0b92f47f7bcc30af
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -66,7 +50,6 @@ function App() {
   return (
     <ApolloProvider client={client}>
     <div className="App">
-<<<<<<< HEAD
       <Router>
         <>
           <HomeNavbar />
@@ -110,30 +93,6 @@ function App() {
           </Routes>
         </>
       </Router>
-=======
-      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      {
-        (() => {
-          switch (currentPage) {
-            case "Home":
-              return <Italy />
-
-            // case "":
-            //   // return < />
-
-            // case "":
-            //   // return < />
-
-            // case "":
-            //   // return < />
-
-            default:
-              return <Italy />
-
-          }
-        })()
-      }
->>>>>>> 61ea51db84dbbaf8236282bd0b92f47f7bcc30af
     </div>
     </ApolloProvider>
   );
