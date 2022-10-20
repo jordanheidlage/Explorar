@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home () {
+function Out () {
     return (
         <>
         
@@ -10,4 +10,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default Out;

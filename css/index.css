@@ -30,23 +30,23 @@ body{
     animation: slider 20s ease-in-out infinite alternate;
 }
  .container #slider-img-1{
-    background-image: url(./images/archi.webp);
+    background-image: url(../images/archi.webp);
     background-position: center;
 } 
 .container #slider-img-2{
-    background-image: url(./images/lake\ 3.jpg);
+    background-image: url(../images/lake\ 3.jpg);
     background-position: center;
 }
 .container #slider-img-3{
-    background-image: url(./images/bali\ 11.jpg);
+    background-image: url(../images/bali\ 11.jpg);
     background-position: center;
 }
 .container #slider-img-4{
-    background-image: url(./images/bed.jpg);
+    background-image: url(../images/bed.jpg);
     background-position: center;
 }
 .container #slider-img-5{
-    background-image: url(./images/japan\ 2.jpg);
+    background-image: url(../images/japan\ 2.jpg);
     background-position: center;
 }
 

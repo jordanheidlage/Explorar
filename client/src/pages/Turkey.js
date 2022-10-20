@@ -1,15 +1,13 @@
 import React from "react";
 
-export default function Turkey(props) {
+function Turkey() {
     return (
-
         <>
-
-            <div class="container">
-
-            </div>
-
+        
+        
+        
         </>
     )
-
 }
+
+export default Turkey;
