@@ -1,3 +1,56 @@
+import React, { useState, useEffect } from 'react';
+import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+import { useMutation } from '@apollo/client';
+import { SAVE_LOCATION } from '../utils/mutations';
+import { QUERY_ME } from '../utils/queries'
+import Auth from '../utils/auth';
+import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
+
+const Italy = () => {
+
+  const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
+    update(cache, { data: { saveLocation } }) {
+      try {
+        const { me } = cache.readQuery({ query: QUERY_ME });
+
+        cache.writeQuery({
+          query: QUERY_ME,
+          data: { me: saveLocation.savedLocations },
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    },
+  });
+
+  const handleSaveLocation = async () => {
+    const locationToSave = {
+      name: "Italy",
+      locationId: "1",
+      image: "placeholder"
+    }
+
+    // get token
+    const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+    if (!token) {
+      return false;
+    }
+
+    try {
+      console.log({locationToSave})
+      const { data } = await saveLocation({
+        variables: {
+          ...locationToSave
+        },
+      });
+      // setSavedBookIds([...savedBookIds, bookToSave.bookId]);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  return(
 <>
   {/* Hello world */}
   <div className="awesome" style={{ border: "1px solid red" }}>
@@ -40,7 +93,7 @@
               <a href="#flights">Flights to catch</a>
             </li>
             <li id="number3">
-              <a href="#save">
+              <a href="#save" onClick={() => handleSaveLocation()}>
                 Save
                 <i className="fa-solid fa-bookmark" />
               </a>
@@ -258,3 +311,6 @@
   </footer>
   {/*footer end*/}
 </>
+)}
+
+export default Italy
