@@ -1,0 +1,41 @@
+#navbar{
+    display: flex;
+    align-items:center; 
+    justify-content: space-between;
+    background: #1b2430;
+    padding: 20px 80px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#navtabs:hover{
+color: orange;
+
+}
+
+#navtabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#navbrand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#loginButton{
+    background-color: #1b2430;
+}
+
+
+
+
+
+
+
+

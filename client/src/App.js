@@ -1,7 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeNavbar from "./navigation/HomeNavbar";
 import Home from "./Home";
 import In from "./forms/In";
@@ -12,17 +12,16 @@ import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
 import Turkey from "./pages/Turkey";
-import NavbarHome from './navigation/HomeNavbar';
+
 
 
 function App() {
-  //  const [currentPage, setCurrentPage] = useState("Home")
+
   return (
     <div className="App">
       <Router>
         <>
-        <HomeNavbar/>
-          <Navbar />
+          <HomeNavbar />
           <Routes>
             <Route
               path='/Home'
@@ -45,8 +44,20 @@ function App() {
               element={<Indonesia />}
             />
             <Route
-              path='/Greece'
-              element={<Greece/>}
+              path='/Italy'
+              element={<Italy />}
+            />
+            <Route
+              path='/Japan'
+              element={<Japan />}
+            />
+            <Route
+              path='/Seychelles'
+              element={<Seychelles />}
+            />
+            <Route
+              path='/Turkey'
+              element={<Turkey />}
             />
           </Routes>
         </>
