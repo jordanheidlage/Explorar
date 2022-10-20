@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url(./images/bali.jpg);  */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto;
+
+}
+
+.container{
+    position: relative;
+}
+.container .wrapper{
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    margin:  5rem auto;
+   
+}
+.container  .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(7, 100%);
+    height: 100%;
+    width: 110%;
+    animation: slider 20s ease-in-out infinite alternate;
+}
+ .container #slider-img-1{
+    background-image: url(../images/archi.webp);
+    background-position: center;
+} 
+.container #slider-img-2{
+    background-image: url(../images/lake\ 3.jpg);
+    background-position: center;
+}
+.container #slider-img-3{
+    background-image: url(../images/bali\ 11.jpg);
+    background-position: center;
+}
+.container #slider-img-4{
+    background-image: url(../images/bed.jpg);
+    background-position: center;
+}
+.container #slider-img-5{
+    background-image: url(../images/japan\ 2.jpg);
+    background-position: center;
+}
+
+
+
+.container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .8rem;
+}
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: -5%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(173, 3, 245, 0.6);
+    color: blueviolet;
+
+}
+/* .button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*background-color: #000000;*/
+    /* opacity: 0.7;
+    z-index: -1;
+  } */ 
+@keyframes slider{
+   0%{transform: translateX(0%);}
+   10%{transform: translateX(-100%);}
+   20%{transform: translateX(-100%);}
+   30%{transform: translateX(-200%);}
+   40%{transform: translateX(-200%);}
+   50%{transform: translateX(-200%);}
+   60%{transform: translateX(-300%);}
+   70%{transform: translateX(-300%);}
+   80%{transform: translateX(-300%);}
+   90%{transform: translateX(0%);}
+   100%{transform: translateX(0%);}
+   
+   
+}
