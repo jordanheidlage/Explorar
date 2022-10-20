@@ -6,19 +6,6 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 
-<<<<<<< HEAD
-function Italy () {
-    return (
-        <>
-        
-        
-        
-        </>
-    )
-}
-
-export default Italy;
-=======
 const Italy = () => {
 
   const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
@@ -327,4 +314,3 @@ const Italy = () => {
 )}
 
 export default Italy
->>>>>>> 61ea51db84dbbaf8236282bd0b92f47f7bcc30af
