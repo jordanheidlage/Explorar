@@ -5,7 +5,6 @@ import { SAVE_LOCATION } from '../utils/mutations';
 import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
-import './Italy.css';
 
 const Italy = () => {
 
