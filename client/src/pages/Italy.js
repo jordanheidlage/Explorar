@@ -6,6 +6,10 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Italy.css"
+const italyMall20 = require("../images/italy/itally mall 20.jpg")
+const amalfi1 = require("../images/italy/amalfi 1.jpg")
+const pizza1 = require("../images/italy/pizza 1.jpg")
+const gondola2 = require("../images/italy/gondola 2.jpg")
 
 const Italy = () => {
 
@@ -133,7 +137,7 @@ const Italy = () => {
         </div>
         <div className="about-img1" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/itally mall 20.jpg" alt="about img" />
+            <img src={italyMall20} alt="about img" />
           </div>
         </div>
         <div className="row">
@@ -152,7 +156,7 @@ const Italy = () => {
           </div>
           <div className="about-img" data-aos="fade-left">
             <div className="img-box">
-              <img src="./images/amalfi 1.jpg" alt="about img" />
+              <img src={amalfi1} alt="about img" />
             </div>
           </div>
           <div className="row">
@@ -169,7 +173,7 @@ const Italy = () => {
             </div>
             <div className="about-img1" data-aos="fade-left">
               <div className="img-box">
-                <img src="./images/pizza 1.jpg" alt="about img" />
+                <img src={pizza1} alt="about img" />
               </div>
             </div>
             <div className="row">
@@ -188,7 +192,7 @@ const Italy = () => {
               </div>
               <div className="about-img" data-aos="fade-left">
                 <div className="img-box">
-                  <img src="./images/gondola 2.jpg" alt="about img" />
+                  <img src={gondola2} alt="about img" />
                 </div>
               </div>
             </div>
