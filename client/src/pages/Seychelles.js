@@ -1,15 +1,13 @@
 import React from "react";
 
-export default function Seychelles(props) {
+function Seychelles () {
     return (
-
         <>
-
-            <div class="container">
-
-            </div>
-
+        
+        
+        
         </>
     )
-
 }
+
+export default Seychelles;

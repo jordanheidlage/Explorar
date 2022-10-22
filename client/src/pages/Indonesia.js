@@ -1,16 +1,13 @@
 import React from "react";
 
-export default function Indonesia(props) {
+function Indonesia () {
     return (
-
         <>
-
-            <div class="container">
-                <p>hi</p>
-            </div>
-
-
+        
+        
+        
         </>
     )
-
 }
+
+export default Indonesia;

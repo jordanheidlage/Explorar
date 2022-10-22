@@ -1,15 +1,13 @@
 import React from "react";
 
-export default function Japan(props) {
+function Japan () {
     return (
-
         <>
-
-            <div class="container">
-
-            </div>
-
+        
+        
+        
         </>
     )
-
 }
+
+export default Japan;

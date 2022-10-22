@@ -3,21 +3,21 @@
   margin: 0;
   padding: 0;
 }
-body{
+/* body{
   background-image: url(../public/images/Turkey/cappadocia1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   /* cursor: url(‘https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png’) 39 39, auto; */
-}
-nav{
+
+/* nav{
   display: flex;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
   padding: 5px 0;
-}
-.logo{
+} */
+/* .logo{
   width: 120px;
 }
 nav ul{
@@ -45,8 +45,8 @@ left: 50%;
 transform: translateX(-50%);
 background: #fff;
 transition: width 0.3s;
-}
-nav ul li a:hover::after{
+} */
+/* nav ul li a:hover::after{
  width: 50%;
 }
 .text-box{
@@ -58,7 +58,7 @@ nav ul li a:hover::after{
   font-size: 50px;
   font-weight: 600;
   margin-top: -700px;
-}
+} */
 /* .text-box h1{
   font-size: 240px;
   line-height: 160px;
@@ -71,7 +71,7 @@ nav ul li a:hover::after{
   background-position: 0 0;
   animation: back 20s linear infinite;
 } */
-@keyframes back{
+/* @keyframes back{
   100%{
       background-position: 2000px 0;
   }
@@ -79,4 +79,4 @@ nav ul li a:hover::after{
 .text-box h3{
   font-size: 40px;
   font-weight: 500;
-}
+} */
