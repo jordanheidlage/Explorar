@@ -5,6 +5,7 @@ import { SAVE_LOCATION } from '../utils/mutations';
 import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
+import './Italy.css';
 
 const Italy = () => {
 
@@ -53,11 +54,6 @@ const Italy = () => {
   return(
 <>
   {/* Hello world */}
-  <div className="awesome" style={{ border: "1px solid red" }}>
-    <label htmlFor="name">Enter your name: </label>
-    <input type="text" id="name" />
-  </div>
-  <p>Enter your HTML here</p>
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,7 +63,7 @@ const Italy = () => {
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
     crossOrigin="anonymous"
   />
-  <link rel="stylesheet" href="./css/Italy.css" />
+  <link rel="stylesheet" href="../css/Italy.css" />
   <title>Document</title>
   {/* header start*/}
   <header className="header">
