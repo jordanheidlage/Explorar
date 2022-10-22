@@ -41,7 +41,8 @@ Upon downloading the application, run the "npm i" command in your terminal to st
 
 - LIVE LINK
 
-- Navigate to the login button on the top right of the screen to either create an account, or login. ![](./assets/login.png)
+- Utilize the login button at the top right of the screen. ![](./assets/topNav.png)
+- Create your 
 
 
 
