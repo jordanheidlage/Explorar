@@ -13,11 +13,13 @@
 -- cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto; }
 
 /* global settings */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::before,
@@ -124,6 +126,21 @@ h6 {
   padding: 0 15px;
   text-align: center;
   margin-bottom: 60px;
+  color: #0d0e0e;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin: 0 auto 90px;
+  width: auto;
+  background: white;
+  display: block;
+  margin: 40px auto;
 }
 .section-title h2 {
   font-size: 35px;
@@ -132,10 +149,10 @@ h6 {
 .section-title h2::before {
   content: attr(data-title);
   display: block;
-  font-size: 24px;
-  color: rgb(223, 223, 28);
+  font-size: 30px;
+  color: black;
   font-family: var(--cursive-font);
-  font-weight: 400;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -301,6 +318,7 @@ h6 {
     color: rgb(254, 250, 250);
     opacity: 1;
     pointer-events: auto;
+    border-radius: 50px;
 }
 
 /* home-section*/
@@ -327,6 +345,7 @@ h6 {
   height: 100%;
   width: 100%;
   background-image: url("../images/lake\ 3.jpg");
+  background-color: #5f1782;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -354,17 +373,36 @@ h6 {
 
 /* things to do section */
 .things-todo {
-background-image: linear-gradient(to right, #a517ba,#5f1782,black);
+  background-image: #fff;
+}
+.things-todo1{
+ 
+  background-color: #041037;
 }
 .about-img {
-  width: 100%;
+  width: 50%;
   margin: auto;
-  padding: 0 15px;
-  margin-right: 0.2rem;
+  padding: 0 0 0 10px;
+  animation: zoomInOut 2s ease infinite;
 }
+
+.about-img1{
+  width: 50%;
+  margin: auto;
+  padding: 0px 0px  100px 0 ;
+  animation: zoomInOut 2s ease infinite;
+}
+
+.about-img2{
+  width: 50%;
+  margin: auto;
+  padding: 0px 0px  10px 100px ;
+}
+
 .about-text h3 {
   font-size: 30px;
   text-transform: capitalize;
+  color: #0d0e0e;
 }
 .about-text p {
   padding: 30px;
@@ -373,14 +411,155 @@ background-image: linear-gradient(to right, #a517ba,#5f1782,black);
   margin: 20px 20px 50px;
   color: #0d0e0e;
 }
+.about-text1 h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: white;
+}
+.about-text1 p {
+  padding: 30px;
+  margin: 0 0 15px;
+  margin-left: 0.2rem;
+  margin: 10px 10px 50px;
+  color: white;
+}
  .about-img img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 50px;
+  justify-content: center;
 } 
+.about-img1 img{
+  border-radius: 50px;
+  position: relative;
+  left: cals(50% - 50%);
+  top: calc(50% - 50%);
+}
+.about-img2 img{
+  border-radius: 50px;
+  position: relative;
+  top: calc(50% - 50%);
+}
 .about-img .img-box {
   position: relative;
   left: cals(50% - 50%);
   top: calc(50% - 50%);
+ 
+}
+.container{
+  position: relative;
+}
+.container .wrapper{
+  width: 60vw;
+  height: 60vh;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  margin:  2rem auto;
+  border-radius: 50%;
+ 
+}
+.container  .wrapper-holder{
+  display: grid;
+  grid-template-columns: repeat(7, 100%);
+  height: 100%;
+  width: 100%;
+  animation: slider 10s ease-in-out infinite alternate;
+  border-radius: 50%;
+}
+.container #slider-img-1{
+  background-image: url(../images/tremezzo\ 3.webp);
+  background-position: center;
+  border-radius: 30%;
+} 
+.container #slider-img-2{
+  background-image: url(../images/hotel\ italy\ 9.jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-3{
+  background-image: url(../images/tremezzo\ 28.png);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-4{
+  background-image: url(../images/tremezzo\ 32.jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-6{
+  background-image: url(../images/sereno\ building\ 10.jpeg);
+  background-position: center;
+  border-radius: 30%;
+} 
+.container #slider-img-7{
+  background-image: url(../images/sereno\ 3.jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-8{
+  background-image: url(../images/Sereno\ 1.webp);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-9{
+  background-image: url(../images/sereno\ 7.jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-11{
+  background-image: url(../images/sirenuse\ building\ 1.jpeg);
+  background-position: center;
+  border-radius: 30%;
+} 
+.container #slider-img-12{
+  background-image: url(../images/sirenuse\ 6.jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-13{
+  background-image: url(../images/sirenuse\ bed\ .jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+.container #slider-img-14{
+  background-image: url(../images/sirenuse\ rest10.jpeg);
+  background-position: center;
+  border-radius: 30%;
+}
+
+
+
+
+.container .button-holder .button{
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: .8rem;
+}
+.container .button-holder{
+  position: absolute;
+  left: 45%;
+  bottom: -5%;
+}
+.button:hover{
+  box-shadow: 0px 0px 7px 4px rgba(173, 3, 245, 0.6);
+  color: blueviolet;
+
+}
+
+@keyframes slider{
+ 0%{transform: translateX(0%);}
+ 10%{transform: translateX(-100%);}
+ 20%{transform: translateX(-100%);}
+ 30%{transform: translateX(-200%);}
+ 40%{transform: translateX(-200%);}
+ 50%{transform: translateX(-200%);}
+ 60%{transform: translateX(-300%);}
+ 70%{transform: translateX(-300%);}
+ 80%{transform: translateX(-300%);}
+ 90%{transform: translateX(0%);}
+ 100%{transform: translateX(0%);}
+ 
  
 }
 /* recipe-section*/
@@ -434,7 +613,7 @@ background-image: linear-gradient(to right, #a517ba,#5f1782,black);
 /* footer */
 .footer {
   padding: 80px 0 0;
-  background-image: url("../images/bbb.webp");
+  background-image: url("../images/italy\ falg.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
