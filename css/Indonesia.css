@@ -89,7 +89,7 @@
   }
   h2 {
     font-weight: 600;
-    color: var(--white);
+    color: black;
   }
   h3{
       color: #0d0e0e;
@@ -122,14 +122,14 @@
   }
   /* section title */
   .section-title {
-    width: 100%;
+    width: 70%;
     padding: 0 15px;
     text-align: center;
     margin-bottom: 60px;
     color: #0d0e0e;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 60;
     color: #333;
     letter-spacing: 4px;
     line-height: 1.3;
@@ -142,20 +142,22 @@
     display: block;
     margin: 40px auto;
   }
+
+
   .section-title h2 {
     font-size: 35px;
     text-transform: capitalize;
   }
+  
   .section-title h2::before {
     content: attr(data-title);
-    display: block;
-    font-size: 30px;
-    color: black;
-    font-family: var(--cursive-font);
-    font-weight: 600;
-    text-transform: capitalize;
+   display: block;
+   font-size: 30px;
+   color: black;
+   font-family: var(--cursive-font);
+   font-weight: 600;
+   text-transform: capitalize; 
   }
-  
   /* buttons*/
   .btn {
     display: inline-block;
@@ -377,7 +379,7 @@
   }
   .things-todo1{
    
-    background-color: #041037;
+    background-color: #5b1303;
   }
   .about-img {
     width: 50%;
@@ -451,7 +453,6 @@
   .container .wrapper{
     width: 60vw;
     height: 60vh;
-    box-shadow: 1px 1px 1px rgb(0, 0, 0);
     margin:  2rem auto;
     border-radius: 50%;
    
@@ -465,62 +466,62 @@
     border-radius: 50%;
   }
   .container #slider-img-1{
-    background-image: url(../images/tremezzo\ 3.webp);
+    background-image: url(../images/Hanging-Gardens13.webp);
     background-position: center;
     border-radius: 30%;
   } 
   .container #slider-img-2{
-    background-image: url(../images/hotel\ italy\ 9.jpeg);
+    background-image: url(../images/the\ ubud\ 32.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-3{
-    background-image: url(../images/tremezzo\ 28.png);
+    background-image: url(../images/the\ ubud\ 20.jpeg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-4{
-    background-image: url(../images/tremezzo\ 32.jpeg);
+    background-image: url(../images/the\ ubud\ 30.webp);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-6{
-    background-image: url(../images/sereno\ building\ 10.jpeg);
+    background-image: url(../images/blackbird\ 10.jpg);
     background-position: center;
     border-radius: 30%;
   } 
   .container #slider-img-7{
-    background-image: url(../images/sereno\ 3.jpeg);
+    background-image: url(../images/blackbird\ rest.webp);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-8{
-    background-image: url(../images/Sereno\ 1.webp);
+    background-image: url(../images/blackbird\ wall\ 3.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-9{
-    background-image: url(../images/sereno\ 7.jpeg);
+    background-image: url(../images/blackbird\ pool.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-11{
-    background-image: url(../images/sirenuse\ building\ 1.jpeg);
+    background-image: url(../images/como\ 10.jpg);
     background-position: center;
     border-radius: 30%;
   } 
   .container #slider-img-12{
-    background-image: url(../images/sirenuse\ 6.jpeg);
+    background-image: url(../images/como\ 2.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-13{
-    background-image: url(../images/sirenuse\ bed\ .jpeg);
+    background-image: url(../images/como\ 20.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-14{
-    background-image: url(../images/sirenuse\ rest10.jpeg);
+    background-image: url(../images/como\ oval\ 2.jpg);
     background-position: center;
     border-radius: 30%;
   }
