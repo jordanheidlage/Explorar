@@ -344,7 +344,7 @@ h6 {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../images/lake\ 3.jpg");
+  background-image: url("../images/bed.jpg");
   background-color: #5f1782;
   background-attachment: fixed;
   background-size: cover;
@@ -465,7 +465,7 @@ h6 {
   border-radius: 50%;
 }
 .container #slider-img-1{
-  background-image: url(../images/tremezzo\ 3.webp);
+  background-image: url(../images/cave\ building.jpeg);
   background-position: center;
   border-radius: 30%;
 } 
