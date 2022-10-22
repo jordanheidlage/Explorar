@@ -12,6 +12,7 @@ import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
 import Turkey from "./pages/Turkey";
+import Profile from "./pages/Profile"
 import {
   ApolloClient,
   InMemoryCache,
@@ -54,6 +55,10 @@ function App() {
         <>
           <HomeNavbar />
           <Routes>
+            <Route
+            path='/profile'
+            element={<Profile />}
+            />
             <Route
               path='/Home'
               element={<Home />}
