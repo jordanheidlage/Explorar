@@ -5,6 +5,7 @@ import { SAVE_LOCATION } from '../utils/mutations';
 import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
+import "./Italy.css"
 
 const Italy = () => {
 
@@ -62,7 +63,6 @@ const Italy = () => {
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
     crossOrigin="anonymous"
   />
-  <link rel="stylesheet" href="../css/Italy.css" />
   <title>Document</title>
   {/* header start*/}
   <header className="header">
@@ -133,7 +133,7 @@ const Italy = () => {
         </div>
         <div className="about-img" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/mall milan.jpeg" alt="about img" />
+            <img src="images/italy/itally mall 20.jpg" alt="about img" />
           </div>
         </div>
         <div className="row">
