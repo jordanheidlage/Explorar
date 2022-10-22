@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    /* background-image: url(./images/bali.jpg);  */
+    background-image: url(../images/Turkey/cappadocia1.jpg); 
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto;
+    /* cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto; */
 
 }
 
