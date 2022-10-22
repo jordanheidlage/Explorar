@@ -52,7 +52,6 @@ const Italy = () => {
 
   return(
 <>
-  {/* Hello world */}
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,17 +61,13 @@ const Italy = () => {
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
     crossOrigin="anonymous"
   />
-  <link rel="stylesheet" href="../css/Italy.css" />
+  <link rel="stylesheet" href="./css/Italy.css" />
   <title>Document</title>
   {/* header start*/}
   <header className="header">
     <div className="container">
       <div className="row justify-content-between align-items-center">
-        <div className="logo">
-          <a href="#">
-            <img src="./Food page/Images/tiny.png" />
-          </a>
-        </div>
+        <div className="logo"></div>
         <button type="button" className="nav-toggler">
           <span />
         </button>
@@ -88,7 +83,7 @@ const Italy = () => {
               <a href="#flights">Flights to catch</a>
             </li>
             <li id="number3">
-              <a href="#save" onClick={() => handleSaveLocation()}>
+              <a href="#save">
                 Save
                 <i className="fa-solid fa-bookmark" />
               </a>
@@ -116,7 +111,9 @@ const Italy = () => {
     <div className="container">
       <div className="row">
         <div className="section-title">
-          <h2 data-title="Fun things to do">Fun things to do in Italy</h2>
+          <h2 data-title="- Fun things to do in Italy -">
+            Fun things to do in Italy
+          </h2>
         </div>
       </div>
       <div className="row">
@@ -126,14 +123,17 @@ const Italy = () => {
             <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
           </h3>
           <p>
-            Italy is the home to most famous designer stores. And shopping for
-            stores like Gucci, Bvlgri and so on has its perks. One it is a lot
-            more cheaper!, two it is more authentic
+            One of the best places you could shop at is no other than Italy's
+            biggest and oldest shopping mall Galleria Vittorio Emanuele II. The
+            architecturally stunning Galleria Vittorio Emanuele II is an ornate
+            shopping arcade with a star-studded list of luxury emporiums,
+            international chain and department stores, and trendy gourmet
+            eateries. It's considered one of Milan's best shopping destinations.
           </p>
         </div>
-        <div className="about-img" data-aos="fade-left">
+        <div className="about-img1" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/mall milan.jpeg" alt="about img" />
+            <img src="./images/itally mall 20.jpg" alt="about img" />
           </div>
         </div>
         <div className="row">
@@ -152,7 +152,7 @@ const Italy = () => {
           </div>
           <div className="about-img" data-aos="fade-left">
             <div className="img-box">
-              <img src="./images/amalfi.jpg" alt="about img" />
+              <img src="./images/amalfi 1.jpg" alt="about img" />
             </div>
           </div>
           <div className="row">
@@ -167,9 +167,29 @@ const Italy = () => {
                 famous foodstuff in the form of delicious pizza.
               </p>
             </div>
-            <div className="about-img" data-aos="fade-left">
+            <div className="about-img1" data-aos="fade-left">
               <div className="img-box">
-                <img src="./images/naples.jpg" alt="about img" />
+                <img src="./images/pizza 1.jpg" alt="about img" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="about-text" data-aos="fade-right">
+                <h3>
+                  4.Ride in a gondola in Venice
+                  <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+                </h3>
+                <p>
+                  The gondolas plying the busy Grand Canal and the smaller
+                  waterways of Venice are one of the most iconic images in the
+                  world. They are the symbol of history, tradition, and romance
+                  in the city on the lagoon, and a gondola ride in Venice ranks
+                  among one of the most dreamed-about experiences for travelers.
+                </p>
+              </div>
+              <div className="about-img" data-aos="fade-left">
+                <div className="img-box">
+                  <img src="./images/gondola 2.jpg" alt="about img" />
+                </div>
               </div>
             </div>
           </div>
@@ -178,64 +198,83 @@ const Italy = () => {
     </div>
   </section>
   {/*about section end*/}
-  <section className="things-todo sec-padding" id="things">
+  <section className="things-todo1 sec-padding" id="hotels">
     <div className="container">
       <div className="row">
         <div className="section-title">
-          <h2 data-title="Fun things to do">Hotels to stay in</h2>
+          <h2 data-title="Hotels to stay in" />
         </div>
       </div>
       <div className="row">
-        <div className="about-text" data-aos="fade-right">
-          <h3>
-            -1 Grand hotel tremezzo , lake Como
-            <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
-          </h3>
+        <div className="about-text1" data-aos="fade-right">
+          <h3>.1 Grand hotel tremezzo , lake Como</h3>
           <p>
-            Italy is the home to most famous designer stores. And shopping for
-            stores like Gucci, Bvlgri and so on has its perks. One it is a lot
-            more cheaper!, two it is more authentic
+            The Tremezzo Hotels Grand Hotel Tremezzo offers beautiful views of
+            the Bellagio and Lake Como in Tremezzina, Italy.
           </p>
         </div>
-        <div className="about-img" data-aos="fade-left">
+        <div className="about-img2" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/hotel italy 1.jpg" alt="about img" />
+            <div className="container">
+              <div className="wrapper display:none">
+                <div className="wrapper-holder">
+                  <div id="slider-img-1" />
+                  <div id="slider-img-2" />
+                  <div id="slider-img-3" />
+                  <div id="slider-img-4" />
+                  <div id="slider-img-5" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="row">
-          <div className="about-text" data-aos="fade-right">
-            <h3>
-              2. Take a boat trip along the Amalfi Coast
-              <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
-            </h3>
+          <div className="about-text1" data-aos="fade-right">
+            <h3>2. IL Sereno Lago DI Como</h3>
             <p>
-              The gorgeous Amalfi Coast is one of the most scenic spots in
-              Italy.Seemingly out of nowhere traditional Mediterranean villages
-              will appear and boat tours usually come with food and drinks
-              included so that you can snack on local produce as you take in the
-              views.
+              Il Sereno Hotel breathes fresh air into the iconic, bucket list
+              item, that is Lake Como. The, award-winning designer, Patricia
+              Urquiola has combined the natural ambiance of the surrounding
+              environment with comfort and luxury, resulting in a design that
+              embodies all spectrum’s of luxurious accommodation.
             </p>
           </div>
-          <div className="about-img" data-aos="fade-left">
+          <div className="about-img2" data-aos="fade-left">
             <div className="img-box">
-              <img src="./images/amalfi.jpg" alt="about img" />
+              <div className="container">
+                <div className="wrapper display:none">
+                  <div className="wrapper-holder">
+                    <div id="slider-img-6" />
+                    <div id="slider-img-7" />
+                    <div id="slider-img-8" />
+                    <div id="slider-img-9" />
+                    <div id="slider-img-10" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="row">
-            <div className="about-text" data-aos="fade-right">
-              <h3>
-                3. Eat pizza in Naples
-                <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
-              </h3>
+            <div className="about-text1" data-aos="fade-right">
+              <h3>3. Le Sirenuse, Amalfi </h3>
               <p>
-                Naples has a range of pretty attractions in its own right but
-                one of the main reasons to come here is to snack on its most
-                famous foodstuff in the form of delicious pizza.
+                Le Sirenuse is a wonderful place from which to enjoy the simple
+                pleasures of Positano and the spectacular Amalfi Coast{" "}
               </p>
             </div>
-            <div className="about-img" data-aos="fade-left">
+            <div className="about-img2" data-aos="fade-left">
               <div className="img-box">
-                <img src="./images/naples.jpg" alt="about img" />
+                <div className="container">
+                  <div className="wrapper display:none">
+                    <div className="wrapper-holder">
+                      <div id="slider-img-11" />
+                      <div id="slider-img-12" />
+                      <div id="slider-img-13" />
+                      <div id="slider-img-14" />
+                      <div id="slider-img-15" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -244,11 +283,11 @@ const Italy = () => {
     </div>
   </section>
   {/*-- recipe section start--*/}
-  <section className="recipe-section sec-padding" id="hotels">
+  <section className="recipe-section sec-padding" id="flights">
     <div className="container">
       <div className="row">
         <div className="section-title">
-          <h2 data-title="Hotels to stay in" />
+          <h2 data-title="Flights information" />
         </div>
       </div>
       <div className="row">
@@ -257,9 +296,7 @@ const Italy = () => {
             type="button"
             className="recipe-tab-item active"
             data-title="buon appetito"
-          >
-           
-          </button>
+          ></button>
         </div>
       </div>
       <div className="container-card bg-stone-50">
@@ -267,12 +304,6 @@ const Italy = () => {
           <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
             Recipes Picked
           </h2>
-          <div
-            className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
-            id="recipeCard"
-          >
-            <h1 />
-          </div>
         </div>
       </div>
     </div>
@@ -306,6 +337,5 @@ const Italy = () => {
   </footer>
   {/*footer end*/}
 </>
-)}
 
 export default Italy
