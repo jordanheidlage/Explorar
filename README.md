@@ -1,14 +1,24 @@
 # Explorar - Project 3
 
+![Explorar](./assets/logo.png)
+
 ![Most recent commit](https://img.shields.io/github/last-commit/jordanheidlage/group_project_3)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jordanheidlage/group_project_3)
 ## Description
 
-This application utilizes the full MERN stack allows users to search for optimal times to visit the following countries, and respective cities with information pertaining to local tourist attractions, food, hotels, and culture throughout the year:
+![Walkthrough](./assets/italyWalkthrough.gif)
+
+This application utilizes the full MERN (MongoDB, Express, React.js, Node.js) stack, and allows users to view the 6 different countries below to search for the following criteria:
+- Culture ![Things to do](./assets/thingsToDo.gif)
+- Hotels ![Hotels](./assets/hotels.gif)
+- Flights![Flights](./assets/hotels.gif)
+
+Countries:
 - Indonesia (Bali)
 - Greece (Mykonos)
 - Italy (Lake Como/Rome/Portofina)
 - Seychelles
+- Japan
 - Turkey (Istanbul/Cappadocia)
 
 
@@ -25,14 +35,15 @@ This application utilizes the full MERN stack allows users to search for optimal
 
 ## Installation
 
-Upon downloading the application, run "npm i" in your terminal to install the correct libraries.
+Upon downloading the application, run the "npm i" command in your terminal to stall the correct libraries.
 
 ## Usage
 
-With the homepage pulled up, you'll be able to utilize the  INSERT WEBPAGE USAGE
+- LIVE LINK
+
+- Navigate to the login button on the top right of the screen to either create an account, or login. ![](./assets/login.png)
 
 
-![Website Preview](INSERT)
 
 ## Credits
 
