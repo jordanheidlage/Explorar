@@ -11,6 +11,7 @@ const amalfi1 = require("../images/italy/amalfi 1.jpg")
 const pizza1 = require("../images/italy/pizza 1.jpg")
 const gondola2 = require("../images/italy/gondola 2.jpg")
 
+import { searchFlightInfo } from '../utils/api';
 const Italy = () => {
 
   const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
@@ -66,7 +67,7 @@ const Italy = () => {
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
     crossOrigin="anonymous"
   />
-  <title>Document</title>
+  <title>Italy</title>
   {/* header start*/}
   <header className="header">
     <div className="container">
@@ -154,7 +155,7 @@ const Italy = () => {
               views.
             </p>
           </div>
-          <div className="about-img" data-aos="fade-left">
+          <div className="about-img1" data-aos="fade-left">
             <div className="img-box">
               <img src={amalfi1} alt="about img" />
             </div>
@@ -306,7 +307,9 @@ const Italy = () => {
       <div className="container-card bg-stone-50">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
-            Recipes Picked
+          {searchFlightInfo.length
+            ? `Viewing ${searchFlightInfo.length} results:`
+            : 'Search for a flight to begin'}
           </h2>
         </div>
       </div>
