@@ -6,12 +6,13 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Italy.css"
+import { searchFlightInfo } from '../utils/API';
 const italyMall20 = require("../images/italy/itally mall 20.jpg")
 const amalfi1 = require("../images/italy/amalfi 1.jpg")
 const pizza1 = require("../images/italy/pizza 1.jpg")
 const gondola2 = require("../images/italy/gondola 2.jpg")
 
-import { searchFlightInfo } from '../utils/API';
+
 const Italy = () => {
 
   const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
@@ -306,8 +307,8 @@ const Italy = () => {
       <div className="container-card bg-stone-50">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
-          {searchFlightInfo.length
-            ? `Viewing ${searchFlightInfo.length} results:`
+          {searchFlightInfo
+            ? `Viewing ${searchFlightInfo} results:`
             : 'Search for a flight to begin'}
           </h2>
         </div>
