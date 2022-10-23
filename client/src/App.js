@@ -23,7 +23,7 @@ import { setContext } from '@apollo/client/link/context';
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 // import Italy from './pages/Italy'
 // import Home from './Home';
 import { useState } from 'react';
