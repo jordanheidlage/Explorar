@@ -42,7 +42,14 @@ Upon downloading the application, run the "npm i" command in your terminal to st
 - LIVE LINK
 
 - Utilize the login button at the top right of the screen. ![](./assets/topNav.png)
-- Create your 
+- Create your account in order to save your travel preferences ![login](./assets/login.png)
+- You'll be redirected to the homepage, where you can choose from any of the 6 countries in the Navbar to explore (Image above)
+- Navigate through the options for:
+    - Hotels
+    - Local Culture
+    - Flights
+- Select your preferred options, and utilize the save button to save this itinerary to your account
+- Travel!
 
 
 
