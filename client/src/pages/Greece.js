@@ -6,13 +6,12 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Greece.css"
+import { searchFlightInfo } from '../utils/API';
 const mus = require("../images/Greece/mus.png")
 const epi = require("../images/Greece/epi 4.jpg")
 const mete = require("../images/Greece/mete.jpeg")
 const greek = require("../images/Greece/greek food.jpeg")
 
-import React from "react";
-import { searchFlightInfo } from '../utils/api';
 
 function Greece () {
 

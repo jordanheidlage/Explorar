@@ -6,12 +6,13 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Indonesia.css"
+import { searchFlightInfo } from '../utils/API';
 const orangutan = require("../images/Indonesia/orangutan.jpg")
 const dive = require("../images/Indonesia/dive raja.jpg")
 const waterfall = require("../images/Indonesia/waterfall 1.jpg")
 const surfing = require("../images/Indonesia/surfing 3.webp")
 
-import { searchFlightInfo } from '../utils/API';
+
 function Indonesia () {
 
     const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
