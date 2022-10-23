@@ -6,10 +6,10 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Indonesia.css"
-const italyMall20 = require("../images/italy/itally mall 20.jpg")
-const amalfi1 = require("../images/italy/amalfi 1.jpg")
-const pizza1 = require("../images/italy/pizza 1.jpg")
-const gondola2 = require("../images/italy/gondola 2.jpg")
+const orangutan = require("../images/Indonesia/orangutan.jpg")
+const dive = require("../images/Indonesia/dive raja.jpg")
+const waterfall = require("../images/Indonesia/waterfall 1.jpg")
+const surfing = require("../images/Indonesia/surfing 3.webp")
 
 import { searchFlightInfo } from '../utils/API';
 function Indonesia () {
@@ -117,7 +117,7 @@ function Indonesia () {
         <div className="about-text" data-aos="fade-right">
           <h3>
             1. See the orangutans in the wild
-            <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+
           </h3>
           <p>
             Orangutan, (Malaysian: “person of the forest”).There are a variety
@@ -127,14 +127,14 @@ function Indonesia () {
         </div>
         <div className="about-img1" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/orangutan.jpg" alt="about img" />
+            <img src={orangutan} alt="about img" />
           </div>
         </div>
         <div className="row">
           <div className="about-text" data-aos="fade-right">
             <h3>
-              2. Dive in Raja Ampat{" "}
-              <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+              2. Dive in Raja Ampat
+            
             </h3>
             <p>
               Raja Ampat, meaning ‘Four Kings’, is a cluster of islands off the
@@ -149,14 +149,14 @@ function Indonesia () {
           </div>
           <div className="about-img1" data-aos="fade-left">
             <div className="img-box">
-              <img src="./images/dive raja.jpg" alt="about img" />
+              <img src={dive} alt="about img" />
             </div>
           </div>
           <div className="row">
             <div className="about-text" data-aos="fade-right">
               <h3>
-                2. Check out the Sekumpul waterfalls{" "}
-                <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+                2. Check out the Sekumpul waterfalls
+              
               </h3>
               <p>
                 Treat your eyes to a waterfall descending straight from heaven!
@@ -168,14 +168,14 @@ function Indonesia () {
             </div>
             <div className="about-img1" data-aos="fade-left">
               <div className="img-box">
-                <img src="./images/waterfall 1.jpg" alt="about img" />
+                <img src={waterfall} alt="about img" />
               </div>
             </div>
             <div className="row">
               <div className="about-text" data-aos="fade-right">
                 <h3>
                   3. Sign up for a Surfing Lesson.. or Book a Surf Camp!
-                  <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+                 
                 </h3>
                 <p>
                   Bali is an ideal place to surf. The south coast's rolling
@@ -188,7 +188,7 @@ function Indonesia () {
               </div>
               <div className="about-img" data-aos="fade-left">
                 <div className="img-box">
-                  <img src="./images/surfing 3.webp" alt="about img" />
+                  <img src={surfing} alt="about img" />
                 </div>
               </div>
             </div>
