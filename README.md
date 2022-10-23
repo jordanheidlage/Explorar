@@ -42,7 +42,7 @@ Upon downloading the application, run the "npm i" command in your terminal to st
 - LIVE LINK
 
 - Utilize the login button at the top right of the screen. ![](./assets/topNav.png)
-- Create your profile 
+- Create your 
 
 
 
