@@ -11,7 +11,7 @@ const amalfi1 = require("../images/italy/amalfi 1.jpg")
 const pizza1 = require("../images/italy/pizza 1.jpg")
 const gondola2 = require("../images/italy/gondola 2.jpg")
 
-import { searchFlightInfo } from '../utils/api';
+import { searchFlightInfo } from '../utils/API';
 function Indonesia () {
 
     const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
