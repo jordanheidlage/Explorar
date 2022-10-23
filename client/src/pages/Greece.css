@@ -74,7 +74,7 @@ h1 {
     margin-top: -650px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background: url(../images/back.png);
+    background: url("../images/back.png");
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
@@ -344,7 +344,7 @@ h6 {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../images/bed.jpg");
+  background-image: url("../images/Greece/bed.jpg");
   background-color: #5f1782;
   background-attachment: fixed;
   background-size: cover;
@@ -465,62 +465,62 @@ h6 {
   border-radius: 50%;
 }
 .container #slider-img-1{
-  background-image: url(../images/cave\ building.jpeg);
+  background-image: url(../images/Greece/cave\ building.jpeg);
   background-position: center;
   border-radius: 30%;
 } 
 .container #slider-img-2{
-  background-image: url(../images/cave\ bed.jpeg);
+  background-image: url(../images/Greece/cave\ view.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-3{
-  background-image: url(../images/tremezzo\ 28.png);
+  background-image: url(../images/Greece/cave\ front.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-4{
-  background-image: url(../images/tremezzo\ 32.jpeg);
+  background-image: url(../images/Greece/cave\ 3.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-6{
-  background-image: url(../images/sereno\ building\ 10.jpeg);
+  background-image: url(../images/Greece/grace\ 55.webp);
   background-position: center;
   border-radius: 30%;
 } 
 .container #slider-img-7{
-  background-image: url(../images/sereno\ 3.jpeg);
+ background-image: url(../images/Greece/grace\ 53.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-8{
-  background-image: url(../images/Sereno\ 1.webp);
+  background-image: url(../images/Greece/grace\ 2.webp);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-9{
-  background-image: url(../images/sereno\ 7.jpeg);
+  background-image: url(../images/Greece/garce\ 50.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-11{
-  background-image: url(../images/sirenuse\ building\ 1.jpeg);
+  background-image: url(../images/Greece/blue\ 12.jpeg);
   background-position: center;
   border-radius: 30%;
 } 
 .container #slider-img-12{
-  background-image: url(../images/sirenuse\ 6.jpeg);
+  background-image: url(../images/Greece/blue\ 2.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-13{
-  background-image: url(../images/sirenuse\ bed\ .jpeg);
+  background-image: url(../images/Greece/blue\ 13.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-14{
-  background-image: url(../images/sirenuse\ rest10.jpeg);
+  background-image: url(../images/Greece/blue\ 6.jpeg);
   background-position: center;
   border-radius: 30%;
 }
@@ -613,7 +613,6 @@ h6 {
 /* footer */
 .footer {
   padding: 80px 0 0;
-  background-image: url("../images/italy\ falg.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

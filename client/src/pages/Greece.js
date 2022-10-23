@@ -6,11 +6,12 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Greece.css"
-const italyMall20 = require("../images/italy/itally mall 20.jpg")
-const amalfi1 = require("../images/italy/amalfi 1.jpg")
-const pizza1 = require("../images/italy/pizza 1.jpg")
-const gondola2 = require("../images/italy/gondola 2.jpg")
 import { searchFlightInfo } from '../utils/API';
+const mus = require("../images/Greece/mus.png")
+const epi = require("../images/Greece/epi 4.jpg")
+const mete = require("../images/Greece/mete.jpeg")
+const greek = require("../images/Greece/greek food.jpeg")
+
 
 function Greece () {
 
@@ -88,7 +89,7 @@ function Greece () {
               <a href="#flights">Flights to catch</a>
             </li>
             <li id="number3">
-              <a href="#save">
+              <a href="#save"onClick={() => handleSaveLocation()}>
                 Save
                 <i className="fa-solid fa-bookmark" />
               </a>
@@ -136,7 +137,7 @@ function Greece () {
         </div>
         <div className="about-img1" data-aos="fade-left">
           <div className="img-box">
-            <img src="./css/images/mus.png" alt="about img" />
+            <img src={mus} alt="about img" />
           </div>
         </div>
         <div className="row">
@@ -154,7 +155,7 @@ function Greece () {
           </div>
           <div className="about-img1" data-aos="fade-left">
             <div className="img-box">
-              <img src="./css/images/epi 4.jpg" alt="about img" />
+              <img src={epi} alt="about img" />
             </div>
           </div>
           <div className="row">
@@ -170,7 +171,7 @@ function Greece () {
             </div>
             <div className="about-img1" data-aos="fade-left">
               <div className="img-box">
-                <img src="./css/images/mete.jpeg" alt="about img" />
+                <img src={mete} alt="about img" />
               </div>
             </div>
             <div className="row">
@@ -186,7 +187,7 @@ function Greece () {
               </div>
               <div className="about-img" data-aos="fade-left">
                 <div className="img-box">
-                  <img src="./css/images/greek food.jpeg" alt="about img" />
+                  <img src={greek} alt="about img" />
                 </div>
               </div>
             </div>

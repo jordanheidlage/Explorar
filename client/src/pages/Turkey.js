@@ -6,12 +6,13 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Turkey.css"
-const italyMall20 = require("../images/italy/itally mall 20.jpg")
-const amalfi1 = require("../images/italy/amalfi 1.jpg")
-const pizza1 = require("../images/italy/pizza 1.jpg")
-const gondola2 = require("../images/italy/gondola 2.jpg")
-
 import { searchFlightInfo } from '../utils/API';
+const hammam = require("../images/Turkey/hammam 1.jpeg")
+const baloon = require("../images/Turkey/baloon.jpeg")
+const turkish = require("../images/Turkey/turkish food.jpg")
+const sema = require("../images/Turkey/sema 1.jpeg")
+
+
 function Turkey() {
 
     const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
@@ -87,7 +88,7 @@ function Turkey() {
               <a href="#flights">Flights to catch</a>
             </li>
             <li id="number3">
-              <a href="#save">
+              <a href="#save"onClick={() => handleSaveLocation()} >
                 Save
                 <i className="fa-solid fa-bookmark" />
               </a>
@@ -134,7 +135,7 @@ function Turkey() {
         </div>
         <div className="about-img1" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/hammam 1.jpeg" alt="about img" />
+            <img src={hammam} alt="about img" />
           </div>
         </div>
         <div className="row">
@@ -152,14 +153,14 @@ function Turkey() {
           </div>
           <div className="about-img1" data-aos="fade-left">
             <div className="img-box">
-              <img src="./images/baloon.jpeg" alt="about img" />
+              <img src={baloon} alt="about img" />
             </div>
           </div>
           <div className="row">
             <div className="about-text" data-aos="fade-right">
               <h3>
                 3. Join a Food Tour in Istanbul{" "}
-                <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+              
               </h3>
               <p>
                 Istanbul is foodie central, and there are few better ways of
@@ -172,7 +173,7 @@ function Turkey() {
             </div>
             <div className="about-img1" data-aos="fade-left">
               <div className="img-box">
-                <img src="./images/turkish food.jpg" alt="about img" />
+                <img src={turkish} alt="about img" />
               </div>
             </div>
             <div className="row">
@@ -193,7 +194,7 @@ function Turkey() {
               </div>
               <div className="about-img" data-aos="fade-left">
                 <div className="img-box">
-                  <img src="./images/sema 1.jpeg" alt="about img" />
+                  <img src={sema} alt="about img" />
                 </div>
               </div>
             </div>
