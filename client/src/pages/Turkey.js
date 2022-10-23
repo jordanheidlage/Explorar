@@ -6,12 +6,13 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Turkey.css"
+import { searchFlightInfo } from '../utils/API';
 const hammam = require("../images/Turkey/hammam 1.jpeg")
 const baloon = require("../images/Turkey/baloon.jpeg")
 const turkish = require("../images/Turkey/turkish food.jpg")
 const sema = require("../images/Turkey/sema 1.jpeg")
 
-import { searchFlightInfo } from '../utils/API';
+
 function Turkey() {
 
     const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
