@@ -13,6 +13,48 @@ const gondola2 = require("../images/italy/gondola 2.jpg")
 
 import { searchFlightInfo } from '../utils/api';
 function Indonesia () {
+
+    const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
+        update(cache, { data: { saveLocation } }) {
+          try {
+            const { me } = cache.readQuery({ query: QUERY_ME });
+    
+            cache.writeQuery({
+              query: QUERY_ME,
+              data: { me: saveLocation.savedLocations },
+            });
+          } catch (e) {
+            console.error(e);
+          }
+        },
+      });
+    
+      const handleSaveLocation = async () => {
+        const locationToSave = {
+          name: "Indonesia",
+          locationId: "5",
+          image: "placeholder"
+        }
+    
+        // get token
+        const token = Auth.loggedIn() ? Auth.getToken() : null;
+    
+        if (!token) {
+          return false;
+        }
+    
+        try {
+          console.log({locationToSave})
+          const { data } = await saveLocation({
+            variables: {
+              ...locationToSave
+            },
+          });
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
     return (
         <>
           <meta charSet="UTF-8" />
@@ -301,6 +343,7 @@ function Indonesia () {
   </footer>
   {/*footer end*/}
         
+
         
         </>
     )

@@ -10,7 +10,7 @@
   --white-light: #c8c8c8;
   --shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   scroll-behavior: smooth;
--- cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto; }
+ }
 
 /* global settings */
 
@@ -74,7 +74,7 @@ h1 {
     margin-top: -650px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background: url(../css/images/back.png);
+    background: url(../images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
@@ -344,7 +344,7 @@ h6 {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../css/images/bed.jpg");
+  background-image: url("../images/bed.jpg");
   background-color: #5f1782;
   background-attachment: fixed;
   background-size: cover;
@@ -377,7 +377,7 @@ h6 {
 }
 .things-todo1{
  
-  background-color: #433520;
+  background-color: #041037;
 }
 .about-img {
   width: 50%;
@@ -451,6 +451,7 @@ h6 {
 .container .wrapper{
   width: 60vw;
   height: 60vh;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
   margin:  2rem auto;
   border-radius: 50%;
  
@@ -464,62 +465,62 @@ h6 {
   border-radius: 50%;
 }
 .container #slider-img-1{
-  background-image: url(../css/images/cave\ building.jpeg);
+  background-image: url(../images/cave\ building.jpeg);
   background-position: center;
   border-radius: 30%;
 } 
 .container #slider-img-2{
-  background-image: url(../css/images/cave\ view.jpeg);
+  background-image: url(../images/cave\ bed.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-3{
-  background-image: url(../css/images/cave\ front.jpeg);
+  background-image: url(../images/tremezzo\ 28.png);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-4{
-  background-image: url(../css/images/cave\ 3.jpeg);
+  background-image: url(../images/tremezzo\ 32.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-6{
-  background-image: url(../css/images/grace\ 55.webp);
+  background-image: url(../images/sereno\ building\ 10.jpeg);
   background-position: center;
   border-radius: 30%;
 } 
 .container #slider-img-7{
- background-image: url(../css/images/grace\ 53.jpeg);
+  background-image: url(../images/sereno\ 3.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-8{
-  background-image: url(../css/images/grace\ 2.webp);
+  background-image: url(../images/Sereno\ 1.webp);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-9{
-  background-image: url(../css/images/garce\ 50.jpeg);
+  background-image: url(../images/sereno\ 7.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-11{
-  background-image: url(../css/images/blue\ 12.jpeg);
+  background-image: url(../images/sirenuse\ building\ 1.jpeg);
   background-position: center;
   border-radius: 30%;
 } 
 .container #slider-img-12{
-  background-image: url(../css/images/blue\ 2.jpeg);
+  background-image: url(../images/sirenuse\ 6.jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-13{
-  background-image: url(../css/images/blue\ 13.jpeg);
+  background-image: url(../images/sirenuse\ bed\ .jpeg);
   background-position: center;
   border-radius: 30%;
 }
 .container #slider-img-14{
-  background-image: url(../css/images/blue\ 6.jpeg);
+  background-image: url(../images/sirenuse\ rest10.jpeg);
   background-position: center;
   border-radius: 30%;
 }
