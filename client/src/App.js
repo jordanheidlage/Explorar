@@ -20,6 +20,7 @@ import {
   createHttpLink,
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context';
+import SignupForm from './forms/SignupForm';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -55,6 +56,10 @@ function App() {
         <>
           <HomeNavbar />
           <Routes>
+            <Route
+            path='/signup'
+            element={<SignupForm />}
+            />
             <Route
             path='/profile'
             element={<Profile />}
