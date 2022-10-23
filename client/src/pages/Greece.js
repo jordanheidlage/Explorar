@@ -10,9 +10,7 @@ const italyMall20 = require("../images/italy/itally mall 20.jpg")
 const amalfi1 = require("../images/italy/amalfi 1.jpg")
 const pizza1 = require("../images/italy/pizza 1.jpg")
 const gondola2 = require("../images/italy/gondola 2.jpg")
-
-import React from "react";
-import { searchFlightInfo } from '../utils/api';
+import { searchFlightInfo } from '../utils/API';
 
 function Greece () {
 
@@ -341,10 +339,7 @@ function Greece () {
     </div>
   </footer>
   {/*footer end*/}
-</>
-        
-        {/*html here*/}
-        
+</>        
 )}
 
 
