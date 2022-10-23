@@ -1,14 +1,24 @@
 # Explorar - Project 3
 
+![Explorar](./assets/logo.png)
+
 ![Most recent commit](https://img.shields.io/github/last-commit/jordanheidlage/group_project_3)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jordanheidlage/group_project_3)
 ## Description
 
-This application utilizes the full MERN stack allows users to search for optimal times to visit the following countries, and respective cities with information pertaining to local tourist attractions, food, hotels, and culture throughout the year:
+![Walkthrough](./assets/italyWalkthrough.gif)
+
+This application utilizes the full MERN (MongoDB, Express, React.js, Node.js) stack, and allows users to view the 6 different countries below to search for the following criteria:
+- Culture ![Things to do](./assets/thingsToDo.gif)
+- Hotels ![Hotels](./assets/hotels.gif)
+- Flights![Flights](./assets/hotels.gif)
+
+Countries:
 - Indonesia (Bali)
 - Greece (Mykonos)
 - Italy (Lake Como/Rome/Portofina)
 - Seychelles
+- Japan
 - Turkey (Istanbul/Cappadocia)
 
 
@@ -25,14 +35,23 @@ This application utilizes the full MERN stack allows users to search for optimal
 
 ## Installation
 
-Upon downloading the application, run "npm i" in your terminal to install the correct libraries.
+Upon downloading the application, run the "npm i" command in your terminal to stall the correct libraries.
 
 ## Usage
 
-With the homepage pulled up, you'll be able to utilize the  INSERT WEBPAGE USAGE
+- LIVE LINK
+
+- Utilize the login button at the top right of the screen. ![](./assets/topNav.png)
+- Create your account in order to save your travel preferences ![login](./assets/login.png)
+- You'll be redirected to the homepage, where you can choose from any of the 6 countries in the Navbar to explore (Image above)
+- Navigate through the options for:
+    - Hotels
+    - Local Culture
+    - Flights
+- Select your preferred options, and utilize the save button to save this itinerary to your account
+- Travel!
 
 
-![Website Preview](INSERT)
 
 ## Credits
 
