@@ -1,14 +1,22 @@
 import React from "react";
-import Navbar from "./navigation/HomeNavbar";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import HomeNavbar from "./navigation/HomeNavbar";
 
-function Home ({ props }) {
-    return (
-        <>
 
-        
-        
-        </>
-    )
-}
+function Home() {
+ <>
+     return (
+      <Container>
+        <Row>
+          <Col>1 of 1</Col>
+        </Row>
+      </Container>
+    );
+ </>
 
-export default Home;
+
+  }
+  
+  export default Home;

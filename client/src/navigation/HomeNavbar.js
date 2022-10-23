@@ -50,8 +50,8 @@ function HomeNavbar() {
 
                             <NavDropdown title="Account" id="nav-dropdown">
                                 <NavDropdown.Item eventKey="4.1" as={Link} to='/In'>Login</NavDropdown.Item>
-                                {/* <NavDropdown.Item eventKey="4.2 " as={Link} to='/Profile'>Profile</NavDropdown.Item> */}
-                                {/* <NavDropdown.Item eventKey="4.3"  as={Link} to='/Out'>Logout</NavDropdown.Item> */}
+                                <NavDropdown.Item eventKey="4.2 " as={Link} to='/Profile'>Profile</NavDropdown.Item>
+                                <NavDropdown.Item eventKey="4.3"  as={Link} to='/Out'>Logout</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

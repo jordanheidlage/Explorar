@@ -39,11 +39,11 @@ function In() {
 
     return (
         <>
-      <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+      <Form noValidate validated={validated} onSubmit={handleFormSubmit} id = "login-body">
         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
           Something went wrong with your login credentials!
         </Alert>
-        <Form.Group>
+        <Form.Group >
           <Form.Label htmlFor='email'>Email</Form.Label>
           <Form.Control
             type='text'
@@ -68,15 +68,21 @@ function In() {
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
-        <Button
+        <Button 
           disabled={!(userFormData.email && userFormData.password)}
-          type='submit'
-          id="loginButt">
+          type='submit'>
           Submit
+        </Button>
+        <Button 
+          disabled={!(userFormData.email && userFormData.password)}
+          type='submit'>
+          Signup
         </Button>
       </Form>
 
         </>
+
+        
     )
 }
 

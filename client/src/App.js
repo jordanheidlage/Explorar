@@ -11,6 +11,7 @@ import Indonesia from "./pages/Indonesia";
 import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
+import Signup from "./forms/Signup"
 import Turkey from "./pages/Turkey";
 import Profile from "./pages/Profile"
 import {
@@ -85,7 +86,7 @@ function App() {
             />
             <Route
               path='/Out'
-              element={<Out />}
+              element={<Home />}
             />
             <Route
               path='/Greece'
@@ -110,6 +111,10 @@ function App() {
             <Route
               path='/Turkey'
               element={<Turkey />}
+            />
+            <Route
+            path='/Signup'
+            element={<Profile />}
             />
           </Routes>
         </>
