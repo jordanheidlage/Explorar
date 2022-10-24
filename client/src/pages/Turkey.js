@@ -35,7 +35,7 @@ function Turkey() {
         const locationToSave = {
           name: "Turkey",
           locationId: "4",
-          image: "placeholder"
+          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/220px-Flag_of_Turkey.svg.png"
         }
     
         // get token

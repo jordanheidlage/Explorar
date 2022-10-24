@@ -32,7 +32,7 @@ function Japan () {
         const locationToSave = {
           name: "Japan",
           locationId: "2",
-          image: "placeholder"
+          image: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
         }
     
         // get token

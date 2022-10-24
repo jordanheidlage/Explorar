@@ -34,7 +34,7 @@ function Indonesia () {
         const locationToSave = {
           name: "Indonesia",
           locationId: "5",
-          image: "placeholder"
+          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/255px-Flag_of_Indonesia.svg.png"
         }
     
         // get token
