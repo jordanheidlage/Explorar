@@ -35,7 +35,7 @@ const Italy = () => {
     const locationToSave = {
       name: "Italy",
       locationId: "1",
-      image: "placeholder"
+      image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png"
     }
 
     // get token

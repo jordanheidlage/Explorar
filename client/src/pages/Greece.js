@@ -35,7 +35,7 @@ function Greece () {
         const locationToSave = {
           name: "Greece",
           locationId: "6",
-          image: "placeholder"
+          image: "https://cdn.britannica.com/49/1049-004-AE4BAD3E/Flag-Greece.jpg"
         }
     
         // get token

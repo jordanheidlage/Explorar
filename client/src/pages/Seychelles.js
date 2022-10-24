@@ -32,7 +32,7 @@ function Seychelles () {
         const locationToSave = {
           name: "Seychelles",
           locationId: "3",
-          image: "placeholder"
+          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Seychelles.svg/2000px-Flag_of_Seychelles.svg.png"
         }
     
         // get token
