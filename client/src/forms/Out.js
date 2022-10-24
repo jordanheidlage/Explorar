@@ -1,16 +1,9 @@
-import React from "react";
-import HomeNavbar from "../navigation/HomeNavbar";
-import Home from "../Home";
+import React from 'react';
 
-function Out () {
-    return (
-        <>
+import { Nav, NavLink, Button } from 'react-bootstrap';
+import "./FormStyles.css"
+import Auth from '../utils/auth';
 
-        
-        
-        
-        </>
-    )
-}
 
-export default Out;
+
+<Nav.Link onClick={Auth.logout}>Logout</Nav.Link>

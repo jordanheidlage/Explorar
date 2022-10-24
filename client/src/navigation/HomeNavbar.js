@@ -50,6 +50,7 @@ function HomeNavbar() {
                             <Nav.Link id="navtabs" as={Link} to='/Turkey'>
                                 Turkey
                             </Nav.Link>
+                            
 
                             <NavDropdown title="Account" id="nav-dropdown">
                                 <NavDropdown.Item eventKey="4.1" as={Link} to='/In'>Login</NavDropdown.Item>
