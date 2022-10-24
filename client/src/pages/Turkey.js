@@ -7,6 +7,7 @@ import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Turkey.css"
 import { searchFlightInfo } from '../utils/API';
+// import './navindex'
 const hammam = require("../images/Turkey/hammam 1.jpeg")
 const baloon = require("../images/Turkey/baloon.jpeg")
 const turkish = require("../images/Turkey/turkish food.jpg")
@@ -34,7 +35,7 @@ function Turkey() {
         const locationToSave = {
           name: "Turkey",
           locationId: "4",
-          image: "placeholder"
+          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/220px-Flag_of_Turkey.svg.png"
         }
     
         // get token
@@ -68,37 +69,6 @@ function Turkey() {
     crossOrigin="anonymous"
   />
  <title>Turkey</title>
-  {/* header start*/}
-  <header className="header">
-    <div className="container">
-      <div className="row justify-content-between align-items-center">
-        <div className="logo"></div>
-        <button type="button" className="nav-toggler">
-          <span />
-        </button>
-        <nav className="nav">
-          <ul>
-            <li className="nav-item" id="number1">
-              <a href="#things">Things to do</a>
-            </li>
-            <li className="nav-item" id="number2">
-              <a href="#hotels">Hotels to stay in</a>
-            </li>
-            <li className="nav-item" id="number3">
-              <a href="#flights">Flights to catch</a>
-            </li>
-            <li id="number3">
-              <a href="#save"onClick={() => handleSaveLocation()} >
-                Save
-                <i className="fa-solid fa-bookmark" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  {/*header end*/}
   {/*home section start*/}
   <section className="home-section" id="home">
     <div className="home-bg" />
@@ -300,8 +270,13 @@ function Turkey() {
   <section className="recipe-section sec-padding" id="flights">
     <div className="container">
       <div className="row">
-        <div className="section-title">
-          <h2 data-title="Flights information" />
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
+          <a href="#save" onClick={() => handleSaveLocation()}>
+                Save
+                <i className="fas fa-save" /> 
+              </a>
+          </h2>
         </div>
       </div>
       <div className="row">
@@ -315,11 +290,6 @@ function Turkey() {
       </div>
       <div className="container-card bg-stone-50">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
-          {searchFlightInfo.length
-            ? `Viewing ${searchFlightInfo.length} results:`
-            : 'Search for a flight to begin'}
-          </h2>
         </div>
       </div>
     </div>
