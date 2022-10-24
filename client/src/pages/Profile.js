@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+import { Jumbotron, Container, Col, Form, Button, Card, CardColumns, Row } from 'react-bootstrap';
 import { defaultDataIdFromObject, useMutation } from '@apollo/client';
 import { useQuery } from '@apollo/client'
 import { REMOVE_LOCATION } from '../utils/mutations';
 import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { removeLocationId } from '../utils/localStorage';
+
 
 const Profile = () => {
     const [userData, setUserData] = useState({});
@@ -70,7 +71,9 @@ const Profile = () => {
 
     return(
         <>
-        <CardColumns>
+
+
+         <CardColumns>
           {userData.savedLocations.map((location) => {
             return (
               <Card key={location.locationId} border='dark'>
@@ -84,8 +87,14 @@ const Profile = () => {
               </Card>
             );
           })}
-        </CardColumns>
+        </CardColumns> 
         {/* HTML here */}
+
+
+
+
+
+
         </>
     )
 }
