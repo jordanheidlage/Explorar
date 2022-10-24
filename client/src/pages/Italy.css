@@ -374,10 +374,11 @@ h6 {
 /* things to do section */
 .things-todo {
   background-image: #fff;
+  background-color:white
 }
 .things-todo1{
  
-  background-color: #041037;
+  /* background-color: #041037; */
 }
 .about-img {
   width: 50%;

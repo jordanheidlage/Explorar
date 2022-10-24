@@ -7,6 +7,7 @@ import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Greece.css"
 import { searchFlightInfo } from '../utils/API';
+// import './navindex'
 const mus = require("../images/Greece/mus.png")
 const epi = require("../images/Greece/epi 4.jpg")
 const mete = require("../images/Greece/mete.jpeg")
@@ -69,37 +70,6 @@ function Greece () {
     crossOrigin="anonymous"
   />
   <title>Greece</title>
-  {/* header start*/}
-  <header className="header">
-    <div className="container">
-      <div className="row justify-content-between align-items-center">
-        <div className="logo"></div>
-        <button type="button" className="nav-toggler">
-          <span />
-        </button>
-        <nav className="nav">
-          <ul>
-            <li className="nav-item" id="number1">
-              <a href="#things">Things to do</a>
-            </li>
-            <li className="nav-item" id="number2">
-              <a href="#hotels">Hotels to stay in</a>
-            </li>
-            <li className="nav-item" id="number3">
-              <a href="#flights">Flights to catch</a>
-            </li>
-            <li id="number3">
-              <a href="#save"onClick={() => handleSaveLocation()}>
-                Save
-                <i className="fas fa-save" /> 
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  {/*header end*/}
   {/*home section start*/}
   <section className="home-section" id="home">
     <div className="home-bg" />
@@ -289,7 +259,6 @@ function Greece () {
     <div className="container">
       <div className="row">
         <div className="section-title">
-          <h2 data-title="Flights information" />
         </div>
       </div>
       <div className="row">
@@ -304,9 +273,10 @@ function Greece () {
       <div className="container-card bg-stone-50">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
-          {searchFlightInfo.length
-            ? `Viewing ${searchFlightInfo.length} results:`
-            : 'Search for a flight to begin'}
+          <a href="#save" onClick={() => handleSaveLocation()}>
+                Save
+                <i className="fas fa-save" /> 
+              </a>
           </h2>
         </div>
       </div>

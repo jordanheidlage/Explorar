@@ -2,3 +2,21 @@ body {
     background-color: #1b2430;
     min-height: 100vh;
 }
+
+.container #slider-img-1{
+    background-image: url(./images/archi.webp);
+    background-position: center;
+}
+.container #slider-img-2{
+    background-image: url(./images/italy/lake\ 3.jpg);
+    background-position: center;
+}
+.container #slider-img-3{
+    background-image: url(./images/Indonesia/bali\ 11.jpg);
+    background-position: center;
+}
+.container #slider-img-4{
+    background-image: url(./images/Greece/bed.jpg);
+    background-position: center;
+
+}
