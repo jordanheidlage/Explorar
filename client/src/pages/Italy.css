@@ -371,6 +371,10 @@ h6 {
   margin: 0 0 30px;
 }
 
+.header .nav .fas{
+  margin-left: 10px;
+  }
+
 /* things to do section */
 .things-todo {
   background-image: #fff;

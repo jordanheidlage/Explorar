@@ -2,7 +2,7 @@
     display: flex;
     align-items:center; 
     justify-content: space-between;
-    background: #1b2430;
+    background-color: rgba(255, 255, 255, 0.095);
     padding: 20px 80px;
     font-family: 'Montserrat', sans-serif;
 

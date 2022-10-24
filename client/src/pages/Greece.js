@@ -90,9 +90,9 @@ function Greece () {
               <a href="#flights">Flights to catch</a>
             </li>
             <li id="number3">
-              <a href="#save"onClick={() => handleSaveLocation()}>
+              <a href="#save" onClick={() => handleSaveLocation()}>
                 Save
-                <i className="fa-solid fa-bookmark" />
+                <i className="fas fa-save" />
               </a>
             </li>
           </ul>

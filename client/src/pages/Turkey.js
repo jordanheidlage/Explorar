@@ -87,9 +87,9 @@ function Turkey() {
               <a href="#flights">Flights to catch</a>
             </li>
             <li id="number3">
-              <a href="#save"onClick={() => handleSaveLocation()} >
+              <a href="#save" onClick={() => handleSaveLocation()} >
                 Save
-                <i className="fa-solid fa-bookmark" />
+                <i className="fas fa-save" />
               </a>
             </li>
           </ul>
@@ -115,14 +115,14 @@ function Turkey() {
     <div className="container">
       <div className="row">
         <div className="section-title">
-          <h2 data-title=""> Fun things to do in Indonesia</h2>
+          <h2 data-title="Fun things to do in Turkey"> Fun things to do in Turkey</h2>
         </div>
       </div>
       <div className="row">
         <div className="about-text" data-aos="fade-right">
           <h3>
             1. Scrub Up in a Hammam (Turkish Bath)
-            <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+        
           </h3>
           <p>
             Getting soaped up and scrubbed down in a hamam (Turkish bath) is the
@@ -141,7 +141,7 @@ function Turkey() {
           <div className="about-text" data-aos="fade-right">
             <h3>
               2. Hot-Air Ballooning over Cappadocia{" "}
-              <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+          
             </h3>
             <p>
               One of Turkey's top things to do, a hot-air balloon ride over
@@ -179,7 +179,7 @@ function Turkey() {
               <div className="about-text" data-aos="fade-right">
                 <h3>
                   4. Watching a Whirling Dervish Ceremony (Sema)
-                  <a href="https://www.italynow.com/blog/5-italian-designer-brands-and-where-to-find-them-in-italy/" />
+                 
                 </h3>
                 <p>
                   The Mevlevi sect is a Sufi religious order that began under

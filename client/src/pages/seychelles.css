@@ -10,7 +10,7 @@
     --white-light: #c8c8c8;
     --shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     scroll-behavior: smooth;
-   }
+  }
   
   /* global settings */
   
@@ -321,9 +321,6 @@
       border-radius: 50px;
   }
   
-  .header .nav .fas{
-    margin-left: 10px;
-    }
   /* home-section*/
   .home-section {
     position: relative;
@@ -347,7 +344,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../images/cappadocia2.jpg");
+    background-image: url("../images/seychelles\ background.jpg");
     background-color: #5f1782;
     background-attachment: fixed;
     background-size: cover;
@@ -374,13 +371,16 @@
     margin: 0 0 30px;
   }
   
+  .header .nav .fas{
+    margin-left: 10px;
+    }
   /* things to do section */
   .things-todo {
     background-image: #fff;
   }
   .things-todo1{
    
-    background-color: #5b1303;
+    background-color:  #7D5A50;
   }
   .about-img {
     width: 50%;
@@ -467,62 +467,62 @@
     border-radius: 50%;
   }
   .container #slider-img-1{
-    background-image: url(../images/Turkey/delphin\ 1.jpeg);
+    background-image: url(../images/six.jpg);
     background-position: center;
     border-radius: 30%;
   } 
   .container #slider-img-2{
-    background-image: url(../images/Turkey/delphin\ lobby\ 1.jpeg);
+    background-image: url(../images/private.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-3{
-    background-image: url(../images/Turkey/delphin\ rest\ 4.jpeg);
+    background-image: url(../images/six\ 1.webp);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-4{
-    background-image: url(../images/Turkey/delphin\ pool.jpeg);
+    background-image: url(../images/six\ rest.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-6{
-    background-image: url(../images/Turkey/building1.jpeg);
+    background-image: url(../images/kemp.webp);
     background-position: center;
     border-radius: 30%;
   } 
   .container #slider-img-7{
-   background-image: url(../images/Turkey/raffles\ room.jpeg);
+   background-image: url(../images/kemp\ 3.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-8{
-    background-image: url(../images/Turkey/raffles\ pool2.jpg);
+    background-image: url(../images/kemp\ bed.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-9{
-    background-image: url(../images/Turkey/raffles\ rest.jpeg);
+    background-image: url(../images/kemp\ rest.webp);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-11{
-    background-image: url(../images/Turkey/capp\ building.jpeg);
+    background-image: url(../images/Anan\ pool\ 2.webp);
     background-position: center;
     border-radius: 30%;
   } 
   .container #slider-img-12{
-    background-image: url(../images/Turkey/capp1.jpeg);
+    background-image: url(../images/anan\ spa.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-13{
-    background-image: url(../images/Turkey/capp.jpeg);
+    background-image: url(../images/anan\ rest.jpg);
     background-position: center;
     border-radius: 30%;
   }
   .container #slider-img-14{
-    background-image: url(..//images/Turkey/koza\ roof\ 1.jpeg);
+    background-image: url(../images/anan\ bed\ 4.jpg);
     background-position: center;
     border-radius: 30%;
   }

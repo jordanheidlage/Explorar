@@ -61,7 +61,13 @@ function Indonesia () {
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/Indonesia.css" />
-  <title>Document</title>
+  <title>Indonesia</title>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+    crossOrigin="anonymous"
+  />
   {/* header start*/}
   <header className="header">
     <div className="container">
@@ -84,7 +90,7 @@ function Indonesia () {
             <li id="number3">
               <a href="#save" onClick={() => handleSaveLocation()}>
                 Save
-                <i className="fa-solid fa-bookmark" />
+                <i className="fas fa-save" />
               </a>
             </li>
           </ul>
@@ -110,7 +116,7 @@ function Indonesia () {
     <div className="container">
       <div className="row">
         <div className="section-title">
-          <h2 data-title=""> Fun things to do in Indonesia</h2>
+          <h2 data-title="Fun things to do in Indonesia"> Fun things to do in Indonesia</h2>
         </div>
       </div>
       <div className="row">
