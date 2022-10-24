@@ -11,7 +11,7 @@
 This application utilizes the full MERN (MongoDB, Express, React.js, Node.js) stack, and allows users to view the 6 different countries below to search for the following criteria:
 - Culture ![Things to do](./assets/thingsToDo.gif)
 - Hotels ![Hotels](./assets/hotels.gif)
-- Flights![Flights](./assets/hotels.gif)
+
 
 Countries:
 - Indonesia (Bali)
@@ -39,7 +39,7 @@ Upon downloading the application, run the "npm i" command in your terminal to st
 
 ## Usage
 
-- LIVE LINK
+- Live Link: https://explorar-project3.herokuapp.com/
 
 - Utilize the login button at the top right of the screen. ![](./assets/topNav.png)
 - Create your account in order to save your travel preferences ![login](./assets/login.png)
@@ -47,7 +47,6 @@ Upon downloading the application, run the "npm i" command in your terminal to st
 - Navigate through the options for:
     - Hotels
     - Local Culture
-    - Flights
 - Select your preferred options, and utilize the save button to save this itinerary to your account
 - Travel!
 
