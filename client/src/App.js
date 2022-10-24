@@ -11,6 +11,7 @@ import Indonesia from "./pages/Indonesia";
 import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
+import Signup from "./forms/Signup"
 import Turkey from "./pages/Turkey";
 import Profile from "./pages/Profile"
 import {
@@ -21,6 +22,22 @@ import {
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context';
 import SignupForm from './forms/SignupForm';
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+// import Navbar from './Navbar';
+// import Italy from './pages/Italy'
+// import Home from './Home';
+import { useState } from 'react';
+// import login from '.login';
+// import logout from './logout';
+// import Greece from './pages/Greece';
+// import Indonesia from './pages/Indonesia';
+// import Italy from './pages/Italy';
+// import Japan from './pages/Japan';
+// import Seychelles from './pages/Seychelles';
+// import Turkey from './pages/Turkey';
+
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -74,7 +91,7 @@ function App() {
             />
             <Route
               path='/Out'
-              element={<Out />}
+              element={<Home />}
             />
             <Route
               path='/Greece'
@@ -100,9 +117,15 @@ function App() {
               path='/Turkey'
               element={<Turkey />}
             />
+            <Route
+            path='/Signup'
+            element={<Profile />}
+            />
           </Routes>
         </>
       </Router>
+
+=======
     </div>
     </ApolloProvider>
   );

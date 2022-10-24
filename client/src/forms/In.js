@@ -39,11 +39,11 @@ function In() {
 
     return (
         <>
-      <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+      <Form noValidate validated={validated} onSubmit={handleFormSubmit} id = "login-body">
         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
           Something went wrong with your login credentials!
         </Alert>
-        <Form.Group>
+        <Form.Group >
           <Form.Label htmlFor='email'>Email</Form.Label>
           <Form.Control
             type='text'
@@ -68,32 +68,21 @@ function In() {
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
-        <Button
+        <Button 
           disabled={!(userFormData.email && userFormData.password)}
-          type='submit'
-          id="loginButt">
+          type='submit'>
           Submit
+        </Button>
+        <Button 
+          disabled={!(userFormData.email && userFormData.password)}
+          type='submit'>
+          Signup
         </Button>
       </Form>
 
-
-{/*             <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
-                </div>
-                <div className="form-check">
-
-                </div>
-                <button id="loginButt" type="submit" className="btn btn-outline-warning">Login</button>
-            </form>*/}
-
         </>
+
+        
     )
 }
 

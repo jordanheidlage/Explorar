@@ -28,11 +28,13 @@ color: orange;
     color: white;
 }
 
-#loginButton{
+/* #loginButton{
     background-color: #1b2430;
+} */
+
+#nav-dropdown{
+    color: white;
 }
-
-
 
 
 
