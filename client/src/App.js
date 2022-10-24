@@ -21,6 +21,7 @@ import {
   createHttpLink,
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context';
+import SignupForm from './forms/SignupForm';
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -72,6 +73,10 @@ function App() {
         <>
           <HomeNavbar />
           <Routes>
+            <Route
+            path='/signup'
+            element={<SignupForm />}
+            />
             <Route
             path='/profile'
             element={<Profile />}
