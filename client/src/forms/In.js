@@ -73,11 +73,6 @@ function In() {
           type='submit'>
           Submit
         </Button>
-        <Button 
-          disabled={!(userFormData.email && userFormData.password)}
-          type='submit'>
-          Signup
-        </Button>
       </Form>
 
         </>
