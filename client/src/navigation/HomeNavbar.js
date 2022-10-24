@@ -51,13 +51,15 @@ function HomeNavbar() {
                             <Nav.Link id="navtabs" as={Link} to='/Turkey'>
                                 Turkey
                             </Nav.Link>
-                            
+
 
                             <NavDropdown title="Account" id="nav-dropdown">
                                 <NavDropdown.Item eventKey="4.1" as={Link} to='/In'>Login</NavDropdown.Item>
                                 <NavDropdown.Item eventKey="4.2 " as={Link} to='/Profile'>Profile</NavDropdown.Item>
                                 <NavDropdown.Item eventKey="4.3" as={Link} to='/signup'>Sign Up</NavDropdown.Item>
+                                <NavDropdown.Divider />
                                 <NavDropdown.Item eventKey="4.4"><Nav.Link as={Link} to='/' onClick={Auth.logout}>Logout</Nav.Link></NavDropdown.Item>
+                                {/* <NavDropdown.Item eventKey="4.4"></NavDropdown.Item> */}
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

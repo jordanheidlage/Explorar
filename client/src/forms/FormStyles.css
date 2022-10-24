@@ -1,6 +1,12 @@
-#login-body{
-background-color: #1b2430 ;
-min-height: 100vh;
-padding: 50px;
+#login-body {
+    background-color: #1b2430;
+    min-height: 100vh;
+    padding: 50px;
 }
 
+
+#signup-body {
+    background-color: #1b2430;
+    min-height: 100vh;
+    padding: 50px;
+}
