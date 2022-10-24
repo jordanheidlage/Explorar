@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+/* body{
     background-image: url(../images/Turkey/cappadocia1.jpg); 
     background-color: black;
     background-repeat: no-repeat;
@@ -10,8 +10,8 @@ body{
     background-size: cover;
     /* cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto; */
 
-}
-
+ 
+/* 
 .container{
     position: relative;
 }
@@ -69,7 +69,7 @@ body{
     box-shadow: 0px 0px 7px 4px rgba(173, 3, 245, 0.6);
     color: blueviolet;
 
-}
+} */
 /* .button::before {
     content: "";
     position: absolute;
@@ -81,7 +81,7 @@ body{
     /* opacity: 0.7;
     z-index: -1;
   } */ 
-@keyframes slider{
+/* @keyframes slider{
    0%{transform: translateX(0%);}
    10%{transform: translateX(-100%);}
    20%{transform: translateX(-100%);}
@@ -95,4 +95,4 @@ body{
    100%{transform: translateX(0%);}
    
    
-}
+} */
