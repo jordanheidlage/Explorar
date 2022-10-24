@@ -6,6 +6,9 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Japan.css"
+const cherryBoat = require("../images/Japan/cherry boat.jpg")
+const tea = require("../images/Japan/tea.jpg")
+const teamLab = require("../images/Japan/teamlab 2.jpg")
 
 function Japan () {
 
@@ -130,7 +133,7 @@ function Japan () {
         </div>
         <div className="about-img1" data-aos="fade-left">
           <div className="img-box">
-            <img src="./images/Japan/cherry boat.jpg" alt="about img" />
+            <img src={cherryBoat} alt="about img" />
           </div>
         </div>
         <div className="row">
@@ -145,7 +148,7 @@ function Japan () {
           </div>
           <div className="about-img1" data-aos="fade-left">
             <div className="img-box">
-              <img src="./images/Japan/teamlab 2.jpg" alt="about img" />
+              <img src={teamLab} alt="about img" />
             </div>
           </div>
           <div className="row">
@@ -160,7 +163,7 @@ function Japan () {
             </div>
             <div className="about-img1" data-aos="fade-left">
               <div className="img-box">
-                <img src="./images/Japan/tea.jpg" alt="about img" />
+                <img src={tea} alt="about img" />
               </div>
             </div>
           </div>
