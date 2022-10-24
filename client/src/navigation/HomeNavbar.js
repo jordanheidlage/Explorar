@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab, NavDropdown } from 'react-bootstrap';
 // import Button from 'react-bootstrap/Button';
 import "./HomeNavbarStyles.css"
+import Auth from '../utils/auth'
 
 
 
@@ -55,7 +56,8 @@ function HomeNavbar() {
                             <NavDropdown title="Account" id="nav-dropdown">
                                 <NavDropdown.Item eventKey="4.1" as={Link} to='/In'>Login</NavDropdown.Item>
                                 <NavDropdown.Item eventKey="4.2 " as={Link} to='/Profile'>Profile</NavDropdown.Item>
-                                <NavDropdown.Item eventKey="4.3"  as={Link} to='/Out'>Logout</NavDropdown.Item>
+                                <NavDropdown.Item eventKey="4.3" as={Link} to='/signup'>Sign Up</NavDropdown.Item>
+                                <NavDropdown.Item eventKey="4.4" as={Link} to='/'><Nav.Link onClick={Auth.logout}>Logout</Nav.Link></NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
