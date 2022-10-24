@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab, NavDropdown } from 'react-bootstrap';
-// import Button from 'react-bootstrap/Button';
 import "./HomeNavbarStyles.css"
 import Auth from '../utils/auth'
-
-
-
-
 
 function HomeNavbar() {
 

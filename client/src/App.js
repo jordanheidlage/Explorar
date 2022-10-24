@@ -5,7 +5,7 @@ import './App.css';
 import HomeNavbar from "./navigation/HomeNavbar";
 import Home from "./Home";
 import In from "./forms/In";
-import Out from "./forms/Out";
+// import Out from "./forms/Out";
 import Greece from "./pages/Greece"
 import Indonesia from "./pages/Indonesia";
 import Italy from "./pages/Italy";
@@ -22,20 +22,10 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import SignupForm from './forms/SignupForm';
 
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-// import Navbar from './Navbar';
-// import Italy from './pages/Italy'
-// import Home from './Home';
+
 import { useState } from 'react';
-// import login from '.login';
-// import logout from './logout';
-// import Greece from './pages/Greece';
-// import Indonesia from './pages/Indonesia';
-// import Italy from './pages/Italy';
-// import Japan from './pages/Japan';
-// import Seychelles from './pages/Seychelles';
-// import Turkey from './pages/Turkey';
+
 
 
 // Construct our main GraphQL API endpoint
