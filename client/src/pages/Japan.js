@@ -6,6 +6,7 @@ import { QUERY_ME } from '../utils/queries'
 import Auth from '../utils/auth';
 import { saveLocationIds, getSavedLocationIds } from '../utils/localStorage';
 import "./Japan.css"
+// import './navindex'
 const cherryBoat = require("../images/Japan/cherry boat.jpg")
 const tea = require("../images/Japan/tea.jpg")
 const teamLab = require("../images/Japan/teamlab 2.jpg")
@@ -67,37 +68,6 @@ function Japan () {
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
     crossOrigin="anonymous"
   />
-  {/* header start*/}
-  <header className="header">
-    <div className="container">
-      <div className="row justify-content-between align-items-center">
-        <div className="logo"></div>
-        <button type="button" className="nav-toggler">
-          <span />
-        </button>
-        <nav className="nav">
-          <ul>
-            <li className="nav-item" id="number1">
-              <a href="#things">Things to do</a>
-            </li>
-            <li className="nav-item" id="number2">
-              <a href="#hotels">Hotels to stay in</a>
-            </li>
-            <li className="nav-item" id="number3">
-              <a href="#flights">Flights to catch</a>
-            </li>
-            <li className="nav-item" id="number3">
-              <a href="#save" onClick={() => handleSaveLocation()}>
-                Save
-                <i className="fas fa-save" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  {/*header end*/}
   {/*home section start*/}
   <section className="home-section" id="home">
     <div className="home-bg" />
@@ -264,8 +234,13 @@ function Japan () {
   <section className="recipe-section sec-padding" id="flights">
     <div className="container">
       <div className="row">
-        <div className="section-title">
-          <h2 data-title="Flights information" />
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 className="title text-2xl font-extrabold tracking-tight text-gray-900">
+          <a href="#save" onClick={() => handleSaveLocation()}>
+                Save
+                <i className="fas fa-save" /> 
+              </a>
+          </h2>
         </div>
       </div>
       <div className="row">
