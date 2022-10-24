@@ -19,12 +19,12 @@ function HomeNavbar() {
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id='navCollapse'>
                         <Nav className='ml-auto'>
-                            <Nav.Link id="navtabs" as={Link} to='/Signup'>
+                            {/* <Nav.Link id="navtabs" as={Link} to='/Signup'>
                                 Sign up
                             </Nav.Link>
                             <Nav.Link id="navtabs" as={Link} to='/Profile'>
                                 Profile
-                            </Nav.Link> */}
+                            </Nav.Link>  */}
                             <Nav.Link id="navtabs" as={Link} to='/Greece'>
                                 Greece
                             </Nav.Link>
