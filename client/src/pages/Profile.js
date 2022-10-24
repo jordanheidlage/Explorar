@@ -71,7 +71,7 @@ const Profile = () => {
 
   return (
     <>
-      <Row xs={1} md={2} className="g-4">
+      {/* <Row xs={1} md={2} className="g-4">
         {Array.from({ length: 4 }).map((_, idx) => (
           <Col>
             {userData.savedLocations.map((location) => {
@@ -89,10 +89,10 @@ const Profile = () => {
             })}
           </Col>
         ))}
-      </Row>
+      </Row> */}
 
 
-{/* 
+      
       <CardColumns>
         {userData.savedLocations.map((location) => {
           return (
@@ -107,13 +107,9 @@ const Profile = () => {
             </Card>
           );
         })}
-      </CardColumns> */}
+      </CardColumns>
 
       {/* HTML here */}
-
-
-
-
 
 
     </>
