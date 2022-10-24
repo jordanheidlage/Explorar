@@ -11,7 +11,6 @@ import Indonesia from "./pages/Indonesia";
 import Italy from "./pages/Italy";
 import Japan from "./pages/Japan";
 import Seychelles from "./pages/Seychelles";
-import Signup from "./forms/Signup"
 import Turkey from "./pages/Turkey";
 import Profile from "./pages/Profile"
 import {
