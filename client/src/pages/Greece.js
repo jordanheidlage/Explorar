@@ -14,7 +14,7 @@ const greek = require("../images/Greece/greek food.jpeg")
 
 
 function Greece () {
-
+  
     const [saveLocation, { error }] = useMutation(SAVE_LOCATION, {
         update(cache, { data: { saveLocation } }) {
           try {
@@ -91,7 +91,7 @@ function Greece () {
             <li id="number3">
               <a href="#save"onClick={() => handleSaveLocation()}>
                 Save
-                <i className="fa-solid fa-bookmark" />
+                <i className="fas fa-save" /> 
               </a>
             </li>
           </ul>
